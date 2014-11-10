@@ -1,0 +1,44 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0045)http://fiddle.jshell.net/e7pru8uk/show/light/ -->
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Highcharts test tool - jsFiddle demo</title>
+  
+  <script type="text/javascript" src="jquery-compat-git.js"></script>
+  
+  <script src="http://code.highcharts.com/highcharts.js"></script>  
+
+<script type="text/javascript"> 
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Fruit Consumption'
+        },
+        xAxis: {
+            categories: ['Apples', 'Bananas', 'Oranges']
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit eaten'
+            }
+        },
+        series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+        }, {
+            name: 'John',
+            data: [5, 7, 3]
+        }],
+    });
+});
+ 
+</script>
+</head>
+<body>
+<div id="container" style="height: 300px" data-highcharts-chart="0"></div>
+</script>
+</body>
+</html>
